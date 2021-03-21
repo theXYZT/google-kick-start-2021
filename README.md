@@ -13,7 +13,7 @@ My **Python 3** solutions to [Google Kick Start 2021](https://codingcompetitions
 | # | Problem | Solution | Notes |
 |---|---------|----------|-------|
 | A | [K-Goodness String](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cca3) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20A/k-goodness-string.py) |  |
-| B | [L Shaped Plots](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068c509) | [Python 3.7]() | Requires Numpy |
+| B | [L Shaped Plots](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068c509) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20A/L-shaped-plots.py) | Requires Numpy |
 | C | [Rabbit House](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cb14) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20A/rabbit-house.py) | Requires Numpy |
 | D | [Checksum](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068c2c3) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20A/checksum.py) | Requires Numpy and Scipy |
 
