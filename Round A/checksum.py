@@ -5,17 +5,11 @@ from scipy.sparse.csgraph import minimum_spanning_tree
 
 
 def solve(N, B):
-    max_cost = np.sum(B)
-
     adj = np.zeros((2*N, 2*N), dtype=int)
-    for i in range(N):
-        for j in range(N):
-            k = B[i, j]
-            if k:
-                adj[i, N+j] = -k
+    adj[:N, N:] = -B
 
-    max_weight = np.sum(minimum_spanning_tree(adj))
-    return max_cost + round(max_weight)
+    max_weight = round(np.sum(minimum_spanning_tree(adj)))
+    return np.sum(B) + max_weight
 
 
 # I/O Code
