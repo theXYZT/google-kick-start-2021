@@ -7,7 +7,6 @@ from scipy.sparse.csgraph import minimum_spanning_tree
 def solve(N, B):
     adj = np.zeros((2*N, 2*N), dtype=int)
     adj[:N, N:] = -B
-
     max_weight = round(np.sum(minimum_spanning_tree(adj)))
     return np.sum(B) + max_weight
 

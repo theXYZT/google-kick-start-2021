@@ -5,20 +5,8 @@ from collections import defaultdict
 
 
 def get_neighbors(i, j, R, C):
-    neighbors = []
-    if i > 0:
-        neighbors.append((i-1, j))
-
-    if i < R-1:
-        neighbors.append((i+1, j))
-
-    if j > 0:
-        neighbors.append((i, j-1))
-
-    if j < C-1:
-        neighbors.append((i, j+1))
-
-    return neighbors
+    neighbors = [(i-1, j), (i+1, j), (i, j-1), (i, j+1)]
+    return [(x, y) for x, y in neighbors if 0 <= x < R and 0 <= y < C]
 
 
 def solve(R, C, grid):
@@ -26,30 +14,22 @@ def solve(R, C, grid):
     minG = maxG - (R + C - 2)
     G = np.where(grid < minG, minG, grid)
 
-    result = np.sum(G - grid)
-
     buckets = defaultdict(set)
     for i in range(R):
         for j in range(C):
-            k = G[i, j]
-            buckets[k].add((i, j))
+            buckets[G[i, j]].add((i, j))
 
     for k in range(maxG, minG-1, -1):
-        if k in buckets:
-            nodes = buckets.pop(k)
-        else:
-            nodes = set()
-
+        nodes = buckets.pop(k, set())
         for i, j in nodes:
             for x, y in get_neighbors(i, j, R, C):
                 g = G[x, y]
                 inc = (k - 1) - g
                 if inc > 0:
                     G[x, y] += inc
-                    result += inc
                     buckets[g].discard((x, y))
                     buckets[g + inc].add((x, y))
-    return result
+    return np.sum(G - grid)
 
 
 # I/O Code

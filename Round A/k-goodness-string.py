@@ -2,10 +2,7 @@
 
 
 def min_operations(N, K, S):
-    goodness = 0
-    for i in range(N//2):
-        a, b = S[i], S[-i-1]
-        goodness += (a != b)
+    goodness = sum(S[i] != S[-i-1] for i in range(N//2))
     return abs(K - goodness)
 
 
