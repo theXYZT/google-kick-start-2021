@@ -25,5 +25,5 @@ My **Python 3** solutions to [Google Kick Start 2021](https://codingcompetitions
 | A | [Increasing Substring](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a882) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20B/increasing-substring.py) |  |
 | B | [Longest Progression](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a3a5) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20B/longest-progression.py) |  |
 | C | [Consecutive Primes](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a8e6) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20B/consecutive-primes.py) |  |
-| D | [Truck Delivery](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a885) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20B/truck-delivery.py) | Memory Limit Exceeded (Test Set 2) |
+| D | [Truck Delivery](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a885) | [Python 3.7](https://github.com/theXYZT/google-kick-start-2021/blob/master/Round%20B/truck-delivery.py) |  |
 
